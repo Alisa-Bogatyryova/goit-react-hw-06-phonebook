@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alisa-Bogatyryova/goit-react-hw-04-hooks-phonebook"
+    "url": "git+https://github.com/Alisa-Bogatyryova/goit-react-hw-06-phonebook"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/Alisa-Bogatyryova/goit-react-hw-04-hooks-phonebook.git/issues"
+    "url": "https://github.com/Alisa-Bogatyryova/goit-react-hw-06-phonebook.git/issues"
   },
-  "homepage": "https://alisa-bogatyryova.github.io/goit-react-hw-04-hooks-phonebook/",
+  "homepage": "https://alisa-bogatyryova.github.io/goit-react-hw-06-phonebook/",
   "eslintConfig": {
     "extends": [
       "react-app",
