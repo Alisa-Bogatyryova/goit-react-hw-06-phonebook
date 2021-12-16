@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -14,6 +15,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "redux-devtools-extension": "^2.13.9",
     "shortid": "^2.2.16",
     "web-vitals": "^1.1.2"
   },
@@ -28,13 +30,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alisa-Bogatyryova/goit-react-hw-06-phonebook"
+    "url": "git+https://github.com/Eduard-Konovka/react-default.git"
   },
-  "author": "",
+  "author": "Eduard Konovka <ed098ua@gmail.com>",
   "bugs": {
-    "url": "https://github.com/Alisa-Bogatyryova/goit-react-hw-06-phonebook.git/issues"
+    "url": "https://github.com/Eduard-Konovka/react-default/issues"
   },
-  "homepage": "https://alisa-bogatyryova.github.io/goit-react-hw-06-phonebook/",
+  "homepage": "https://Eduard-Konovka.github.io/react-default",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -57,8 +59,7 @@
     "eslint": "^7.11.0",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1",
-    "shortid": "^2.2.16"
+    "prettier": "^2.4.1"
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",

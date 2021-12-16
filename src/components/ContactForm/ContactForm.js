@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import {connect} from 'react-redux';
+import * as actions from './redux/actions'
 import s from './ContactForm.module.css';
 
 const ContactForm = ({ addContactPhone }) => {
@@ -74,5 +76,17 @@ const ContactForm = ({ addContactPhone }) => {
   );
 };
 
+const mapStateToProps = state => {
+  return {
+    value: state
+  }
+}
 
-export default ContactForm;
+const mapDispatchToProps = dispatch => {
+  return {
+    method: () => dispatch (),
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm)
