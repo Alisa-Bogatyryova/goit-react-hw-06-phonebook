@@ -30,7 +30,6 @@ ul {
   font-size: 16px;
   text-transform: uppercase;
 }
-
 .btn:hover {
   transform: scale(1.1);
 }
