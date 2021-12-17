@@ -1,16 +1,13 @@
-import {createStore} from 'redux';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import rootReducer from './contacts-reducer';
+import logger from 'redux-logger';
 
-const initialState={
-    contacts: {
-      items: [],
-      filter: ''
-    }
+const middleware = [...getDefaultMiddleware(), logger];
 
-const reducer =(state = initialState, action) => state;
-
-const store = createStore(reducer);
-
-
-
+const store = configureStore({
+  reducer: rootReducer,
+  middleware,
+  devTools: process.env.NODE_ENV === 'development',
+});
 
 export default store;

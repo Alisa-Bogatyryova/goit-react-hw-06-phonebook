@@ -17,6 +17,7 @@
     "react-scripts": "4.0.3",
     "redux-devtools-extension": "^2.13.9",
     "shortid": "^2.2.16",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -30,13 +31,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eduard-Konovka/react-default.git"
+    "url": "git+https://github.com/Alisa-Bogatyryova/goit-react-hw-06-phonebook"
   },
-  "author": "Eduard Konovka <ed098ua@gmail.com>",
+  "author": "",
   "bugs": {
-    "url": "https://github.com/Eduard-Konovka/react-default/issues"
+    "url": "https://github.com/Alisa-Bogatyryova/goit-react-hw-06-phonebook/issues"
   },
-  "homepage": "https://Eduard-Konovka.github.io/react-default",
+  "homepage": "https://alisa-bogatyryova.github.io/goit-react-hw-06-phonebook/",
   "eslintConfig": {
     "extends": [
       "react-app",

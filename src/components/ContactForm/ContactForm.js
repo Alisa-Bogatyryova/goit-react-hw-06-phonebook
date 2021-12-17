@@ -1,11 +1,14 @@
 import { useState } from 'react';
-import {connect} from 'react-redux';
-import * as actions from './redux/actions'
+import { useSelector, useDispatch } from 'react-redux';
+import { addContacts } from '../../redux/contacts-actions';
+
 import s from './ContactForm.module.css';
 
-const ContactForm = ({ addContactPhone }) => {
+const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
+  const dispatch = useDispatch();
+  const { contacts } = useSelector(state => state);
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -18,11 +21,21 @@ const ContactForm = ({ addContactPhone }) => {
       alert('Телефонный номер должен содержать только цифры');
       return;
     }
+    
+    const onAddContacts = (name, number) => dispatch(addContacts(name, number));
+    const isAdded = name =>
+      contacts.map(contact => contact.name).includes(name);
 
-    addContactPhone(name, number);
+    if (isAdded(name)) {
+      return alert(`${name} Уже добавлен`);
+    } else {
+      onAddContacts(name, number);
+    }
+
     setName('');
     setNumber('');
   };
+  
 
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -76,17 +89,8 @@ const ContactForm = ({ addContactPhone }) => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    value: state
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    method: () => dispatch (),
-  }
-}
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContactForm)
+
+
+export default ContactForm
